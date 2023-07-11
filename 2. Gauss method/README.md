@@ -5,9 +5,6 @@ The Gauss method is a classical method for solving a system of linear algebraic 
 The essence of the method consists in the sequential exclusion of variables, when by means of elementary transformations the system of equations is reduced to an equivalent system of triangular (stepwise) form, from which all the variables of the system are sequentially, starting from the last (by number).
 
 An example of a SLOUGH solution by the Gauss method:
-
-![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.001.png)
-
 To simplify the appearance of the solution, we will make an expanded matrix of the system:
 
 ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.002.png)
@@ -83,27 +80,6 @@ Additionally:
 1) The program should determine the possibility of solving the original system.
 1) To minimize errors, the program must modify the source data accordingly.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 n = int(input()) 
 
 a = [[int(j) for j in input().split()] for i in range(n)]
@@ -162,32 +138,6 @@ for i in range(len(ans)):
 
 print(\*ans)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 1. Solve a system of linear algebraic equations using a written program, write down the answer:
 
 ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.021.png)
@@ -196,13 +146,6 @@ Answer: x1=5,x2= -1,x3=-5.
 
 1. List the main advantages and disadvantages of the Gauss method:
 
-
 |Advantages|Disadvantages|
 | :-: | :-: |
 |<p>Simpler, clearer, less time-consuming than others.</p><p></p><p>Determines the absence of roots.</p>|<p>Accumulation of computational error during its implementation.</p><p></p><p>Slower than others.</p><p></p>|
-
-1. Send the completed file and the program to the email <KLyustrov@sch57.ru >
-
-Do not forget to specify the last name and class.
-
-**Kruglikov Maxim 10F**
