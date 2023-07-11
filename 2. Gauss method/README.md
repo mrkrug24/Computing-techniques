@@ -64,14 +64,7 @@ Answer: the solution of this system of equations is ![](Images/Aspose.Words.8404
 |2\.|Infinite set|Indefinite|
 |3\.|No|Incompatible|
 
-2. Write a program solving SLOUGH by the Gauss method. The program should receive the number of equations in the system, coefficients for unknowns and a vector of free terms as input. At the output, the program should output a solution to this system – a vector of values.
-
-Additionally:
-
-1) The program should determine the possibility of solving the original system.
-2) To minimize errors, the program must modify the source data accordingly.
-   (The program code is located in the Gauss.py file)
-
+2. Write a program solving SLOUGH by the Gauss method. The program should receive the number of equations in the system, coefficients for unknowns and a vector of free terms as input. At the output, the program should output a solution to this system – a vector of values. The program should determine the possibility of solving the original system. To minimize errors, the program must modify the source data accordingly. (The program code is located in the Gauss.py file)
 
 3. List the main advantages and disadvantages of the Gauss method:
 
