@@ -12,13 +12,13 @@ The simplest methods of numerical integration:
 
 The essence of the method of medium rectangles is shown in the figure:
 
-![](Aspose.Words.fce7393b-c328-42f3-acff-902b87d9a1b6.001.png)
+![](Images/Aspose.Words.fce7393b-c328-42f3-acff-902b87d9a1b6.001.png)
 
 Other rectangle methods work in a similar way
 
 |Left rectangle method|The right rectangle method|
 | :-: | :-: |
-|![](Aspose.Words.fce7393b-c328-42f3-acff-902b87d9a1b6.002.png)|![](Aspose.Words.fce7393b-c328-42f3-acff-902b87d9a1b6.003.png)|
+|![](Images/Aspose.Words.fce7393b-c328-42f3-acff-902b87d9a1b6.002.png)|![](Aspose.Words.fce7393b-c328-42f3-acff-902b87d9a1b6.003.png)|
 
 
 
@@ -26,7 +26,7 @@ Other rectangle methods work in a similar way
 
 More accurate results can be obtained if you replace rectangles with trapezoids:
 
-![](Aspose.Words.fce7393b-c328-42f3-acff-902b87d9a1b6.004.png)
+![](Images/Aspose.Words.fce7393b-c328-42f3-acff-902b87d9a1b6.004.png)
 
 In this case, the value of a certain integral will be equal to the sum of the areas of all trapezoids in a given interval.
 
