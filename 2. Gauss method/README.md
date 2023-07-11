@@ -78,65 +78,8 @@ Answer: the solution of this system of equations is ![](Images/Aspose.Words.8404
 Additionally:
 
 1) The program should determine the possibility of solving the original system.
-1) To minimize errors, the program must modify the source data accordingly.
-
-n = int(input()) 
-
-a = [[int(j) for j in input().split()] for i in range(n)]
-
-k = a[0][0]
-
-for h in range(n-1):
-
-`    `for i in range(n-1):
-
-`        `m = a[i+1][h] / k
-
-`        `for j in range(n+1):
-
-`            `k = a[h][h]
-
-`            `a[i+1][j] = a[i+1][j] - a[h][j]\*m
-
-ans = []
-
-p = 0
-
-for i in range(n-1):
-
-`    `if a[n-1-i][n-1-i] == 0:
-
-` `print("No roots :(")
-
-`        `exit(0)
-
-`    `x = (a[n-1-i][n] - p) / a[n-1-i][n-1-i]
-
-`    `ans.append(x)
-
-`    `p = 0
-
-`    `for j in range(len(ans)):
-
-`        `p = p + a[n-2-i][n-1-i+j] \* ans[j]
-
-p = 0
-
-for j in range(len(ans)):
-
-`    `p = p + a[0][n-1-j]\*ans[j]
-
-x = (a[0][n] - p)/ a[0][0]
-
-ans.append(x)
-
-ans.reverse()
-
-for i in range(len(ans)):
-
-`    `ans[i] = round(ans[i], 5)
-
-print(\*ans)
+2) To minimize errors, the program must modify the source data accordingly.
+   (The program code is located in the Gauss.py file)
 
 1. Solve a system of linear algebraic equations using a written program, write down the answer:
 
