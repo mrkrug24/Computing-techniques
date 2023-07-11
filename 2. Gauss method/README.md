@@ -81,12 +81,6 @@ Additionally:
 2) To minimize errors, the program must modify the source data accordingly.
    (The program code is located in the Gauss.py file)
 
-1. Solve a system of linear algebraic equations using a written program, write down the answer:
-
-![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.021.png)
-
-Answer: x1=5,x2= -1,x3=-5.
-
 1. List the main advantages and disadvantages of the Gauss method:
 
 |Advantages|Disadvantages|
