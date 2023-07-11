@@ -56,15 +56,7 @@ Answer: the solution of this system of equations is ![](Images/Aspose.Words.8404
 
 
 **Progress of the work**
-
-1. Write down the definition and general form of a system of linear algebraic equations.
-
-**System of linear algebraic equations** (*linear system*, also used [аббревиатуры](https://ru.wikipedia.org/wiki/%D0%90%D0%B1%D0%B1%D1%80%D0%B5%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0 ) *SLOUGH*, *SLU*) — [system уравнений](https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9) , each equation in which is [линейным](https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B5_%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5) — [algebraic уравнением](https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5_%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5) first degree.
-
-![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.020.png)
-
 1. Classify the SLOWS by the presence and number of solutions and fill in the table:
-
 
 |Item no.|Number of solutions|Name|
 | :-: | :-: | :-: |
@@ -72,8 +64,7 @@ Answer: the solution of this system of equations is ![](Images/Aspose.Words.8404
 |2\.|Infinite set|Indefinite|
 |3\.|No|Incompatible|
 
-
-1. Write a program solving SLOUGH by the Gauss method. The program should receive the number of equations in the system, coefficients for unknowns and a vector of free terms as input. At the output, the program should output a solution to this system – a vector of values.
+2. Write a program solving SLOUGH by the Gauss method. The program should receive the number of equations in the system, coefficients for unknowns and a vector of free terms as input. At the output, the program should output a solution to this system – a vector of values.
 
 Additionally:
 
@@ -82,7 +73,7 @@ Additionally:
    (The program code is located in the Gauss.py file)
 
 
-List the main advantages and disadvantages of the Gauss method:
+3. List the main advantages and disadvantages of the Gauss method:
 
 |Advantages|Disadvantages|
 | :-: | :-: |
