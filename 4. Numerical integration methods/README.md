@@ -54,25 +54,8 @@ def f1(x):
 7. Does the type of function depend on the accuracy of the method at the same integration step?
 8. You can independently study, implement and investigate the Simpson method.
 
-<table><tr><th rowspan="2"><b>Function</b></th><th rowspan="2"><p></p><p><b>Integration interval</b></p></th><th rowspan="2"><p></p><p><b>Integration step</b></p></th><th colspan="3"><b>Rectangle method</b></th><th rowspan="1"><p><b>Method</b></p><p>` `<b>trapezoids</b></p></th><th rowspan="1"><b>Analytically calculated value of the integral</b></th></tr>
-<tr><td><b>Left</b></td><td><b>Right</b></td><td><b>Average</b></td></tr>
-<tr><td rowspan="3">fx=5x+2</td><td rowspan="3">x∈-7;3</td><td>0\.01</td><td>-80.25</td><td>-79.75</td><td>-80 - (4∙10-13)</td><td>-80 - (4∙10-13)</td><td rowspan="3">-80</td></tr>
-<tr><td><b>Absolute error:</b></td><td>0\.25</td><td>0\.25</td><td>` `4×10-13</td><td>4×10-13</td></tr>
-<tr><td><b>Relative error:</b></td><td>3\.12*10-7</td><td>3\.13*10-7</td><td>5*10-15</td><td>5*10-15</td></tr>
-<tr><td rowspan="3">fx= x3-5x+7</td><td rowspan="3">x∈-5;7</td><td>0\.01</td><td>465\.9606</td><td>470\.0406</td><td>467\.9996</td><td>468\.0006</td><td rowspan="3">468</td></tr>
-<tr><td><b>Absolute error:</b></td><td>2\.0396</td><td>2\.0406</td><td>4×10-4</td><td>6×10-4</td></tr>
-<tr><td><b>Relative погрешность:</b></td><td>4\.37719∙10-3</td><td>4\.34133∙10-3</td><td>8\.5∙10-7</td><td>1\.3∙10-6</td></tr>
-<tr><td rowspan="3">fx= x3-5x+7</td><td rowspan="3">x∈-5;7</td><td>0\.001</td><td>467\.796</td><td>468\.204</td><td>467\.999</td><td>468 + (6∙10-6)</td><td rowspan="3">468</td></tr>
-<tr><td valign="top"><b>Absolute error:</b></td><td>0\.204</td><td>0\.204</td><td>10-3</td><td>6×10-6</td></tr>
-<tr><td valign="top"><b>Relative error:</b></td><td>4\.36*10-4</td><td>4\.35*10-4</td><td>2\.1*10-6</td><td>1\.3*10-8</td></tr>
-<tr><td rowspan="3">fx=sinx∙x</td><td rowspan="3">x∈0;10</td><td>0\.01</td><td>7\.873820779144</td><td>7\.819418668055</td><td>7\.846731408066</td><td>7\.8466197236</td><td rowspan="3">7\.846694179875</td></tr>
-<tr><td><b>Absolute погрешность:</b></td><td>2\.71265992∙10-2</td><td>2\.72755118∙10-2</td><td>3\.7228191∙10-5</td><td>7\.44563275∙10-5</td></tr>
-<tr><td><b>Relative погрешность:</b></td><td>3\.44516∙10-3</td><td>3\.48818∙10-3</td><td>4\.74442∙10-6</td><td>9\.48987∙10-6</td></tr>
-<tr><td rowspan="3">fx=sinx∙x</td><td rowspan="3">x∈0;10</td><td>0\.001</td><td>7\.849413540871</td><td>7\.843973329763</td><td>7\.846694552159</td><td>7\.846693435317</td><td rowspan="3">7\.846694179875</td></tr>
-<tr><td><b>Absolute погрешность:</b></td><td>2\.71936099∙10-3</td><td>2\.72085011∙10-3</td><td>3\.72284∙10-7</td><td>7\.44558∙10-7</td></tr>
-<tr><td><b>Relative погрешность:</b></td><td>3\.46441∙10-4</td><td>3\.46871∙10-4</td><td>4\.74447∙10-8</td><td>9\.48881∙10-8</td></tr>
-</table>
-
+![](Images/Notes_230711_154031_21e.png)
+   
 4. It follows from the calculations that the smallest error (absolute and relative) was obtained using the method of average rectangles and the trapezoid method. Therefore, these methods are more accurate than the others.
 
 5. The error of different methods depends on the type of function – so for a straight line and a sine wave, the error is less for the methods of middle rectangles and trapezoids, and for a parabola – for left and right rectangles. Also, the effectiveness of the methods depends on the step of the function and for a sufficiently small step, the trapezoid method is the most accurate. Therefore, to answer this question, you need to do a lot of research, changing the type of function and the integration step, to find some average value. I have conducted several experiments, analyzed and believe that the ratio of steps should be on the order of 0.1.
