@@ -1,87 +1,87 @@
-**Практическая работа «Решение систем линейных уравнений методом Гаусса»**
+**Practical work "Solving systems of linear equations by the Gauss method"**
 
-Метод Гаусса — классический метод решения системы линейных алгебраических уравнений (СЛАУ). Назван в честь немецкого математика Карла Фридриха Гаусса.
+The Gauss method is a classical method for solving a system of linear algebraic equations (SLA). It is named after the German mathematician Karl Friedrich Gauss.
 
-Суть метода состоит в последовательном исключении переменных, когда с помощью элементарных преобразований система уравнений приводится к равносильной системе треугольного (ступенчатого) вида, из которой последовательно, начиная с последних (по номеру), находятся все переменные системы.
+The essence of the method consists in the sequential exclusion of variables, when by means of elementary transformations the system of equations is reduced to an equivalent system of triangular (stepwise) form, from which all the variables of the system are sequentially, starting from the last (by number).
 
-Пример решения СЛАУ методом Гаусса:
+An example of a SLOUGH solution by the Gauss method:
 
 ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.001.png)
 
-Для упрощения внешнего вида решения составим расширенную матрицу системы:
+To simplify the appearance of the solution, we will make an expanded matrix of the system:
 
 ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.002.png)
 
-В этой матрице слева до вертикальной черты расположены коэффициенты при неизвестных, а справа после вертикальной черты - свободные члены.
+In this matrix, coefficients for unknowns are located to the left before the vertical line, and free terms are located to the right after the vertical line.
 
-Для удобства деления коэффициентов при переменных (чтобы получить деление на единицу) переставим местами первую и вторую строки матрицы системы. Получим систему, эквивалентную данной, так как в системе линейных уравнений можно переставлять местами уравнения:
+For the convenience of dividing coefficients for variables (to get division by one), we rearrange the first and second rows of the matrix of the system. We obtain a system equivalent to this one, since in a system of linear equations, the equations can be rearranged:
 
 ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.003.png)
 
-С помощью нового первого уравнения исключим переменную x из второго и всех последующих уравнений. Для этого ко второй строке матрицы прибавим первую строку, умноженную на ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.004.png) (в нашем случае на ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.005.png)), к третьей строке – первую строку, умноженную на ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.006.png) (в нашем случае на ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.007.png)).
+Using the new first equation, we exclude the variable x from the second and all subsequent equations. To do this, add the first row multiplied by ! to the second row of the matrix[](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.004.png) (in our case on ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.005.png)), to the third line – the first line multiplied by ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.006.png) (in our case on ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.007.png)).
 
-Это возможно, так как ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.008.png)
+This is possible because ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.008.png)
 
-Если бы в нашей системе уравнений было больше трёх, то следовало бы прибавлять и ко всем последующим уравнениям первую строку, умноженную на отношение соответствующих коэффициентов, взятых со знаком минус.
+If there were more than three equations in our system, then we should add the first line to all subsequent equations multiplied by the ratio of the corresponding coefficients taken with a minus sign.
 
-В результате получим матрицу эквивалентную данной системе новой системы уравнений, в которой все уравнения, начиная со второго не содержат переменную x:
+As a result, we obtain a matrix equivalent to this system of a new system of equations in which all equations, starting from the second one, do not contain the variable x:
 
 ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.009.png)
 
-Для упрощения второй строки полученной системы умножим её на ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.010.png) и получим вновь матрицу системы уравнений, эквивалентной данной системе:
+To simplify the second line of the resulting system , multiply it by ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.010.png) and we get again the matrix of the system of equations equivalent to this system:
 
 ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.011.png)
 
-Теперь, сохраняя первое уравнение полученной системы без изменений, с помощью второго уравнения исключаем переменную y из всех последующих уравнений. Для этого к третьей строке матрицы системы прибавим вторую строку, умноженную на ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.012.png) (в нашем случае на ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.013.png)).
+Now, keeping the first equation of the resulting system unchanged, we use the second equation to exclude the variable y from all subsequent equations. To do this, to the third row of the matrix of the system, add the second row multiplied by ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.012.png) (in our case on ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.013.png)).
 
-Если бы в нашей системе уравнений было больше трёх, то следовало бы прибавлять и ко всем последующим уравнениям вторую строку, умноженную на отношение соответствующих коэффициентов, взятых со знаком минус.
+If there were more than three equations in our system, then we should add a second line to all subsequent equations multiplied by the ratio of the corresponding coefficients taken with a minus sign.
 
-В результате вновь получим матрицу системы, эквивалентной данной системе линейных уравнений:
+As a result, we again obtain the matrix of a system equivalent to this system of linear equations:
 
 ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.014.png)
 
-Мы получили эквивалентную данной ступенчатую систему линейных уравнений:
+We have obtained a stepwise system of linear equations equivalent to this one:
 
 ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.015.png)
 
-Если число уравнений и переменных больше, чем в нашем примере, то процесс последовательного исключения переменных продолжается до тех пор, пока матрица системы не станет ступенчатой, как в нашем примере.
+If the number of equations and variables is greater than in our example, then the process of sequential elimination of variables continues until the matrix of the system becomes stepwise, as in our example.
 
-Решение найдём «с конца» - обратный ход. Для этого из последнего уравнения определим z:
+We will find the solution "from the end" - the reverse course. To do this, from the last equation, we define z:
 ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.016.png).
 
-Подставив это значение в предшествующее уравнение, найдём y:
+Substituting this value into the preceding equation, we find y:
 ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.017.png)
 
-Из первого уравнения найдём x:
+From the first equation we find x:
 ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.018.png)
 
-Ответ: решение данной системы уравнений - ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.019.png).
+Answer: the solution of this system of equations is ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.019.png).
 
 
-**Ход выполнения работы**
+**Progress of the work**
 
-1. Запишите определение и общий вид системы линейных алгебраических уравнений.
+1. Write down the definition and general form of a system of linear algebraic equations.
 
-**Система линейных алгебраических уравнений** (*линейная система*, также употребляются [аббревиатуры](https://ru.wikipedia.org/wiki/%D0%90%D0%B1%D0%B1%D1%80%D0%B5%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0) *СЛАУ*, *СЛУ*) — [система уравнений](https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9), каждое уравнение в которой является [линейным](https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B5_%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5) — [алгебраическим уравнением](https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5_%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5) первой степени.
+**System of linear algebraic equations** (*linear system*, also used [аббревиатуры](https://ru.wikipedia.org/wiki/%D0%90%D0%B1%D0%B1%D1%80%D0%B5%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0 ) *SLOUGH*, *SLU*) — [system уравнений](https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9) , each equation in which is [линейным](https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B5_%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5) — [algebraic уравнением](https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5_%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5) first degree.
 
 ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.020.png)
 
-1. Классифицируйте СЛАУ по наличию и количеству решений и заполните таблицу:
+1. Classify the SLOWS by the presence and number of solutions and fill in the table:
 
 
-|№ пп.|Количество решений|Название|
+|Item no.|Number of solutions|Name|
 | :-: | :-: | :-: |
-|1\.|Ровно одно|Определенная|
-|2\.|Бесконечное множество|Неопределенная|
-|3\.|Нет|Несовместная|
+|1\.|Exactly one|Defined|
+|2\.|Infinite set|Indefinite|
+|3\.|No|Incompatible|
 
 
-1. Напишите программу, решающую СЛАУ методом Гаусса. Программа должна на вход получать количество уравнений в системе, коэффициенты при неизвестных и вектор свободных членов. На выходе программа должна выдавать решение этой системы – вектор значений.
+1. Write a program solving SLOUGH by the Gauss method. The program should receive the number of equations in the system, coefficients for unknowns and a vector of free terms as input. At the output, the program should output a solution to this system – a vector of values.
 
-Дополнительно:
+Additionally:
 
-1) Программа должна определять возможность решения исходной системы.
-1) Для минимизации погрешностей программа должна модифицировать исходные данные соответствующим образом.
+1) The program should determine the possibility of solving the original system.
+1) To minimize errors, the program must modify the source data accordingly.
 
 
 
@@ -130,7 +130,7 @@ for i in range(n-1):
 
 `    `if a[n-1-i][n-1-i] == 0:
 
-`        `print("Нет корней :(")
+` `print("No roots :(")
 
 `        `exit(0)
 
@@ -188,21 +188,21 @@ print(\*ans)
 
 
 
-1. Решите систему линейных алгебраических уравнений с помощью написанной программы, запишите ответ:
+1. Solve a system of linear algebraic equations using a written program, write down the answer:
 
 ![](Images/Aspose.Words.8404e77e-8d5b-47e7-9bb1-6d363b328580.021.png)
 
-Ответ: x1=5,x2= -1,x3=-5.
+Answer: x1=5,x2= -1,x3=-5.
 
-1. Перечислите основные достоинства и недостатки метода Гаусса:
+1. List the main advantages and disadvantages of the Gauss method:
 
 
-|Достоинства|Недостатки|
+|Advantages|Disadvantages|
 | :-: | :-: |
-|<p>Более простой, понятный, менее трудоемкий, чем другие.</p><p></p><p>Определяет отсутствие корней.</p>|<p>Накопление вычислительной погрешности при его реализации.</p><p></p><p>Медленнее других.</p><p></p>|
+|<p>Simpler, clearer, less time-consuming than others.</p><p></p><p>Determines the absence of roots.</p>|<p>Accumulation of computational error during its implementation.</p><p></p><p>Slower than others.</p><p></p>|
 
-1. Заполненный файл и программу пришлите на почту <KLyustrov@sch57.ru>
+1. Send the completed file and the program to the email <KLyustrov@sch57.ru >
 
-Не забудьте указать фамилию и класс.
+Do not forget to specify the last name and class.
 
-**Кругликов Максим 10Ф**
+**Kruglikov Maxim 10F**
