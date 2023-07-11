@@ -81,7 +81,8 @@ Additionally:
 2) To minimize errors, the program must modify the source data accordingly.
    (The program code is located in the Gauss.py file)
 
-1. List the main advantages and disadvantages of the Gauss method:
+
+List the main advantages and disadvantages of the Gauss method:
 
 |Advantages|Disadvantages|
 | :-: | :-: |
